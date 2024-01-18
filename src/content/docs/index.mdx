@@ -1,0 +1,33 @@
+---
+title: Fake Movie API
+description: API de peliculas desarrollada con node y express.
+template: splash
+hero:
+  tagline: API para prototipo de sitio web de peliculas.
+  image:
+    file: ../../assets/popcorn 2.png
+  actions:
+    - text: Ver Documentación
+      link: /caracteristicas/
+      icon: right-arrow
+      variant: primary
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+<h1>Características</h1>
+
+<CardGrid stagger>
+	<Card title="Todas las operaciones CRUD" icon="pencil">
+		Aprovecha la API para realizar sin limitaciones todas las operaciones CRUD (Crear, Leer, Actualizar y Eliminar).
+	</Card>
+	<Card title="API REST & MVC" icon="puzzle">
+		Desarrollada a partir de las arquitecturas API REST y Modelo-Vista-Controlador.
+	</Card>
+	<Card title="Validaciones" icon="approve-check-circle">
+		Validación de calidad y seguridad de los datos utilizando Zod en las peticiones POST, PUT y PATCH.
+	</Card>
+	<Card title="Filtros" icon="magnifier">
+		Las películas pueden ser filtradas a partir de sus géneros.
+	</Card>
+</CardGrid>
